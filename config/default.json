@@ -1,0 +1,5 @@
+{
+  "port": 5000,
+  "jwtSecret": "mern cource youtube",
+  "mongoUri": "mongodb+srv://nikitsch:G9rqvQGZCG1gMJ7c@cluster0.kinq5qo.mongodb.net/?retryWrites=true&w=majority"
+}
