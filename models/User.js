@@ -7,7 +7,8 @@ const schema = new Schema({
     unique: true
   },
   password: {
-    type: String, required: true
+    type: String,
+    required: true
   },
   links: [{
     type: Types.ObjectId,
