@@ -15,7 +15,7 @@ const schema = new Schema({
     required: true,
     unique: true
   },
-  data: {
+  date: {
     type: Date,
     default: Date.now
   },
