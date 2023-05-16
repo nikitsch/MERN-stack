@@ -2,7 +2,7 @@ const { Router } = require("express");
 const shortid = require('shortid');
 const Link = require("../models/Link");
 const auth = require("../middleware/auth.middleware");
-const config = require("../config/default.json");
+const config = require('config')
 const router = Router();
 
 router.post(
@@ -20,7 +20,7 @@ router.post(
         return res.json({ link: existing })
       }
 
-      const to = baseUrl + "/t" + code
+      const to = baseUrl + "t/" + code
 
       const link = new Link({
         code, to, from, owner: req.user.userId
