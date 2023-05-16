@@ -5,6 +5,8 @@ export const LinksList = ({ links }) => {
     return (<p className="center">No Links</p>)
   }
 
+  const sortLinks = links.sort((a, b) => a.clicks < b.clicks ? 1 : -1)
+
   return (
     <table>
       <thead>
@@ -18,7 +20,7 @@ export const LinksList = ({ links }) => {
       </thead>
 
       <tbody>
-        {links.map((link, index) => {
+        {sortLinks.map((link, index) => {
           return (
             <tr key={link._id}>
               <td>{index + 1}</td>
