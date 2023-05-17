@@ -21,7 +21,7 @@ function App() {
       token, login, logout, userId, isAuthenticated
     }}>
       <BrowserRouter>
-      {isAuthenticated && <Navbar />}
+        {isAuthenticated && <Navbar />}
         <div className="container">
           {routes}
         </div>
